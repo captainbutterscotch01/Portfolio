@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav's Portfolio</title>
+
+    <!-- Link to a Roman-inspired font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Basic Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 0 2rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 2px solid #ddd;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #222;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        nav {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #555;
+        }
+        .about, .projects, .contact {
+            padding: 2rem 0;
+        }
+        .about h2, .projects h2, .contact h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        .about p, .contact p {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+            color: #555;
+        }
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .project p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact button {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abhinav Lakshminarayanan</h1>
+        <p>Aspiring AI & Automobile Enthusiast | Cinematography & Coding Aficionado</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am Abhinav, a CSE student passionate about the intersection of AI and automobile technology. With a grounding in Python, C, and SQL, I am keen on exploring the world of machine learning and mechanical engineering. When I'm not coding or studying, I indulge in photography and cinematography to capture the world's beauty.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>A brief description of your project can go here. Explain what it does and how it was built.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>A brief description of your project can go here. Explain what it does and how it was built.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Three</h3>
+                    <p>A brief description of your project can go here. Explain what it does and how it was built.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to work together or just have a question, feel free to reach out!</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
